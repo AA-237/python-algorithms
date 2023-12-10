@@ -1,0 +1,14 @@
+{% extends "objectives/base.html" %}
+
+{% block title %}
+{{ obj_detail.title }}
+
+{% endblock  %}
+
+{% block content %}
+    <h2> {{ obj_detail.title }} </h2>
+    <p>Description: {{ obj_detail.description }}</p>
+    <p>Start Date: {{ obj_detail.start_date }}</p>
+    <p>End Date: {{ obj_detail.end_date }}</p>
+
+{% endblock %}

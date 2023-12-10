@@ -1,0 +1,14 @@
+{% extends "objectives/base.html" %}
+
+{% block title %}
+    All Objectives
+{% endblock  %}
+
+{% block content %}
+    <ul>
+        {% for obj in objectives %}
+            <li><a href="{% url 'objective_details' id=obj.id %}"> {{ obj.title }}</a> </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
